@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+.App{
+  font-family:  cursive;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head {
+  font-family:  cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .animate__animated animate__zoomInDown{
+  --animation-duration: 10s;
+  --animate-delay: 0.9s;
+} */
+
+
+/* .myphoto{
+  transition: 1s ease;
+ } */
+ /* .myphoto:hover{
+ -webkit-transform: scale(1.2);
+ -ms-transform: scale(1.2);
+ transform: scale(1.1);
+ transition: 1s ease;
+ }
+ .home-icon{
+  transition: 1s ease;
+ }
+ .home-icon:hover{
+ -webkit-transform: scale(1.2);
+ -ms-transform: scale(1.2);
+ transform: scale(1.1);
+ transition: 1s ease;
+ } */
+
+ #html{
+  border: 1px inset #CDDC39;
+  box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+
+ #html:hover{
+  /* box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px; */
+  border-radius: 10%;
+  padding-top: 10%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+#css{
+  border: 1px inset #CDDC39;
+  box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ }
+
+ #css:hover{
+  /* box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px; */
+  border-radius: 10%;
+  padding-top: 10%;
+} 
+
+#js{
+  border: 1px inset #CDDC39;
+  box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+
+ /* #js:hover{
+  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+} */
+
+
+#react{
+  border: 1px inset #CDDC39;
+  box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+/* 
+ #react:hover{
+  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+} */
+
+#redux{
+  border: 1px inset #CDDC39;
+  box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+
+ /* #redux:hover{
+  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+} */
+
+
+#chakra{
+  border: 1px inset #CDDC39;
+  box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+/* 
+ #chakra:hover{
+  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+} */
+
+
+#npm{
+  border: 1px inset #CDDC39;
+  box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+
+ /* #npm:hover{
+  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
 }
+ */
+
+ #vscode{
+  border: 1px inset #CDDC39;
+  box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+
+ /* #vscode:hover{
+  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+}
+ */
+
+ #postman{
+  border: 1px inset #CDDC39;
+  box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+
+ /* #npm:hover{
+  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+}
+ */
+
+
+ 
+ #node{
+  border: 1px inset #CDDC39;
+  box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+
+ /* #node:hover{
+  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+  border-radius: 10%;
+  padding-top: 10%;
+}
+ */
+
+/* 
+ #project-sec:hover{ 
+  box-shadow: #162a33 0px 19px 38px, #BF360C 0px 15px 12px;
+  
+ } */
