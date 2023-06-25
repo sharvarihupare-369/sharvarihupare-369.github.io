@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Link } from "@chakra-ui/react";
+import { Box, Button, ColorModeProvider, Flex, Link } from "@chakra-ui/react";
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import resume from '../Assets/Resume/Sharvari-Hupare-Resume.pdf'
@@ -25,7 +25,7 @@ useEffect(() => {
     background={"#0F2027"}
     color={"white"}
     position={"sticky"}
-    // zIndex={"overlay"}
+    zIndex={"overlay"}
     top="0"  
     >
     
@@ -77,11 +77,13 @@ useEffect(() => {
             </HashLink>
 
 
-
-              <Link   
+          {/* <ColorModeProvider/> */}
+              <Link  
+               id="resume-link-1"
+              
               className="nav-link resume"
             href={resume} download={true}>
-              <Button  id="resume-button-1"  mr="20px"
+              <Button id="resume-button-1"   mr="20px"
             _hover={{
               bgGradient: "linear(to-r,#3fada8, purple.500)",
             }} color="white" p="10px 40px" borderRadius={"5px"} bgGradient="linear(to-l,#304352, #3fada8)" >

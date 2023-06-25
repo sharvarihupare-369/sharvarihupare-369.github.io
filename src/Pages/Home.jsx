@@ -21,6 +21,10 @@ const Home = () => {
   useEffect(()=>{
     AOS.init({delay:300});
   },[])
+
+  const openLink=(url)=>{
+    window.open(url)
+  }
   return (
     <>
       {/* // <Box bg={"#360148"}  color={"white"} bgGradient='linear(to-br,rgb(54 0 72),rgb(65 2 87),rgb(87 1 117),rgb(115 0 146),rgb(123 0 152))'  height={"100vh"}> */}
@@ -32,8 +36,6 @@ const Home = () => {
         alignItems={"center"}
         id="home"
         
-       
-  
       >
         {/* <Flex justifyContent={"space-between"}> */}
         <Box
@@ -78,8 +80,9 @@ const Home = () => {
         <Box mt="40px" >
 
           <Link  
-            href={resume} download={true}>
-              <Button  id="resume-button-2"  mr="20px"
+          id="resume-link-2"
+            href={resume} download={true} >
+              <Button  id="resume-button-2" onClick={()=>openLink("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=drive_link")}  mr="20px"
             _hover={{
               bgGradient: "linear(to-r,#3fada8, purple.500)",
             }} color="white" p="10px 40px" borderRadius={"5px"} bgGradient="linear(to-l,#304352, #3fada8)" >
@@ -87,6 +90,7 @@ const Home = () => {
               </Button>
 
               </Link>
+                
                 </Box>
 
         </Box>

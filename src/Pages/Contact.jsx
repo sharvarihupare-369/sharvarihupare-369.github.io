@@ -1,14 +1,25 @@
-
-import { Box, Heading ,Image, Flex, Text, Input, FormLabel} from '@chakra-ui/react'
-import React, { useEffect } from 'react'
-import './Contact.css'
+import {
+  Box,
+  Heading,
+  Button,
+  Image,
+  Flex,
+  Text,
+  Input,
+  FormLabel,
+  Textarea,
+  Container,
+} from "@chakra-ui/react";
+import React, { useEffect } from "react";
+import "./Contact.css";
 import AOS from "aos";
-import { Link } from '@chakra-ui/react'
-import { SiGooglemessages } from 'react-icons/si'
-import { GrMail } from 'react-icons/gr'
-import { BiPhone } from 'react-icons/bi'
-import { BsGithub, BsLinkedin } from 'react-icons/bs'
-
+import { Link } from "@chakra-ui/react";
+import { SiGooglemessages } from "react-icons/si";
+import { GrMail } from "react-icons/gr";
+import { FaMobileAlt } from "react-icons/fa";
+import { BiPhone } from "react-icons/bi";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
   useEffect(() => {
@@ -16,25 +27,31 @@ const Contact = () => {
   }, []);
   return (
     <>
-   
-    <Box id='contact' bg={"black"}
-    color={"white"}
-    className="about section"
-    textAlign={"center"}
-    >
-        <Heading className="contact-heading"
-         mt="40px"
-        display={"inline-block"}
-        padding="10px"
-        bgGradient="linear(to-r, #1a9a7c, #5c0c5c)"
-        borderRadius={"8px"}
-        // data-aos="flip-right"
-        ml="80px"
-        mb="45px"
-        as={"h2"}
-        size={"xl"}>Contact</Heading>
+      <Box
+        
+        id="contact"
+        bg={"black"}
+        color={"white"}
+        className="about section"
+        textAlign={"center"}
+      >
+        <Heading
+          className="contact-heading"
+          mt="40px"
+          display={"inline-block"}
+          padding="10px"
+          bgGradient="linear(to-r, #1a9a7c, #5c0c5c)"
+          borderRadius={"8px"}
+          // data-aos="flip-right"
+          // ml="80px"
+          mb="45px"
+          as={"h2"}
+          size={"xl"}
+        >
+          Contact
+        </Heading>
         <Box>
-       <Flex justifyContent={"center"} >
+          {/* <Flex justifyContent={"center"} >
         <Link href='https://github.com/sharvarihupare-369' id="contact-github" >
           <BsGithub fontSize={"40px"} />
           </Link> 
@@ -46,44 +63,150 @@ const Contact = () => {
        </Flex>
         </Box>
 
-        <Flex alignItems={"center"} justifyContent={"space-around"}>
+        <Flex alignItems={"center"} justifyContent={"space-around"}> */}
 
-        {/* <Box w="50%" m="20px" border="1px solid red"> */}
-          <Flex p="20px" m="20px auto"  alignItems={"center"}>
-        {/* <span  >  */}
-        <Flex id="contact-phone">
+          {/* <Box w="50%" m="20px" border="1px solid red"> */}
+          {/* <Flex p="20px" m="20px auto"  alignItems={"center"}> */}
+          {/* <span  >  */}
+          {/* <Flex id="contact-phone">
 
           <BiPhone fontSize={"30px"}/>
           <Text ml="10px">(+91) 8007015254</Text>
-        </Flex>
-         {/* </span> */}
-          </Flex>
-        {/* </Box> */}
-        
-        {/* <span id="contact-email" >  */}
-        <Flex id="contact-email"  p="20px" m="20px auto"  alignItems={"center"}>
+        </Flex> */}
+          {/* </span> */}
+          {/* </Flex> */}
+          {/* </Box> */}
+
+          {/* <span id="contact-email" >  */}
+          {/* <Flex id="contact-email"  p="20px" m="20px auto"  alignItems={"center"}> */}
           {/* <SiGooglemessages fontSize={"60px"} /> */}
-          <GrMail fontSize={"30px"} />
+          {/* <GrMail fontSize={"30px"} />
           <Text ml="10px">sharvarihupare15@gmail.com</Text>
-          </Flex> 
-        {/* </span> */}
-        </Flex>
+          </Flex>  */}
+          {/* </span> */}
+          {/* </Flex> */}
 
-
+          {/* 
         <Box>
           <form>
             <Box>
-              <Input type='email'/>
+              <Flex alignItems={"center"} justifyContent={"center"}>
+
               <FormLabel>Email</FormLabel>
+              <Input w="40%" type='email'/>
+              </Flex>
             </Box>
+            <Box mt="20px">
+              <Flex alignItems={"center"} justifyContent={"center"}>
+
+              <FormLabel>Message</FormLabel> */}
+          {/* <Input w="40%" type='email'/> */}
+          {/* <Textarea w="40%" />
+              </Flex>
+            </Box>
+            <Button type="submit">Contact</Button>
           </form>
         </Box>
+        </Box> */}
+
+          <Flex
+            gap={"15px"}
+            lineHeight={"30px"}
+            textAlign={"center"}
+            w={"85%"}
+            m={"auto"}
+            justifyContent={"space-between"}
+          >
+            <Box
+              display={"grid"}
+              placeItems={"center"}
+              w={"24%"}
+              borderRadius={"5px"}
+              p={"10px 40px"}
+              border={"1px outset"}
+            >
+              <Link
+                id="contact-github"
+                href="https://github.com/sharvarihupare-369"
+              >
+                <BsGithub style={{ margin: "auto", fontSize: "35px" }} />
+              </Link>
+              <Text>Github</Text>
+            </Box>
+            <Box
+              display={"grid"}
+              placeItems={"center"}
+              w={"24%"}
+              borderRadius={"5px"}
+              p={"10px 40px"}
+              border={"1px outset"}
+            >
+              <Link
+                id="contact-linkedin"
+                href="https://www.linkedin.com/in/sharvari-hupare15/"
+              >
+                <BsLinkedin style={{ margin: "auto", fontSize: "35px" ,color:"#0e76a8"}} />
+              </Link>
+              <Text>LinkedIn</Text>
+            </Box>
+            <Box
+              display={"grid"}
+              placeItems={"center"}
+              w={"26%"}
+              borderRadius={"5px"}
+              p={"10px 40px"}
+              border={"1px outset"}
+            >
+              <Text>
+                <FaMobileAlt style={{ margin: "auto", fontSize: "35px" }} />
+              </Text>
+              <Text id="contact-phone">+918007015254</Text>
+            </Box>
+            <Box
+              w={"30%"}
+              borderRadius={"5px"}
+              p={"10px 40px"}
+              border={"1px outset"}
+            >
+              <Text>
+                <HiOutlineMail style={{ margin: "auto", fontSize: "45px" ,color:"#c71610" }} />
+              </Text>
+              <Text id="contact-email">sharvarihupare15@gmail.com</Text>
+            </Box>
+          </Flex>
         </Box>
 
-        
+        <Box p="20px" m="20px">
+          <Container>
+            <Box>
+              <FormLabel>Email</FormLabel>
+              <Input />
+            </Box>
+            <Box>
+              <FormLabel>Message</FormLabel>
+              <Textarea></Textarea>
+            </Box>
+            <Box mt="40px">
+              <Link>
+                <Button
+              
+                  mr="20px"
+                  _hover={{
+                    bgGradient: "linear(to-r,#3fada8, purple.500)",
+                  }}
+                  color="white"
+                  p="10px 40px"
+                  borderRadius={"5px"}
+                  bgGradient="linear(to-l,#304352, #3fada8)"
+                >
+                  Contact Me
+                </Button>
+              </Link>
+            </Box>
+          </Container>
+        </Box>
 
-
-    {/* <Box bg={"#162a33"}
+        {/* <Box bg={"#162a33"}
     color={"white"}
     minH={"100vh"}
     justifyContent={"space-around"}
@@ -105,8 +228,9 @@ const Contact = () => {
         </nav>
     </section>
     </Box> */}
+      </Box>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -1,6 +1,8 @@
-import { Box, Flex, Heading, Text, Image, Container } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Image, Container, Button } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { Link } from "react-router-dom";
+import resume from '../Assets/Resume/Sharvari-Hupare-Resume.pdf'
 
 const About = () => {
   useEffect(() => {
@@ -8,12 +10,16 @@ const About = () => {
   }, []);
   return (
     <Box
-      textAlign={"center"}
+    // position={"fixed"}
+   
+    textAlign={"center"}
       id="about"
       className="about section"
       bg={"black"}
       color={"white"}
     >
+     
+
       <Heading
        mt="150px"
         className="aboutmehead"
@@ -27,6 +33,7 @@ const About = () => {
         as={"h2"}
         size={"xl"}
       >
+
         About ME
       </Heading>
       <Flex justifyContent={"space-around"} alignItems={"center"}>
@@ -57,8 +64,12 @@ const About = () => {
             to achieve impacts on user experience. I develop websites and
             applications using HTML, CSS,JavaScript and React.
           </Text>
+
+        
         </Box>
       </Flex>
+
+      
     </Box>
   );
 };
