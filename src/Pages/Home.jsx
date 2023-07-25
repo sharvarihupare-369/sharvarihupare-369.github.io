@@ -1,103 +1,116 @@
 import {
   Box,
-  Container,
   Heading,
   Text,
   Flex,
   Image,
-  Center,
   Link,
-  Button
+  Button,
 } from "@chakra-ui/react";
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
+import Typed from "typed.js";
 import myimage from "../Assets/Mypic.jpg";
-// import 'animate.css';
-// import "../components/Button.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import resume from '../Assets/Resume/Sharvari-Hupare-Resume.pdf'
+import resume from "../Assets/Resume/Sharvari-Hupare-Resume.pdf";
+
+
+import "./home.css";
 
 const Home = () => {
-  useEffect(()=>{
-    AOS.init({delay:300});
-  },[])
+  useEffect(() => {
+    AOS.init({ delay: 300 });
+  }, []);
 
-  const openLink=(url)=>{
-    window.open(url)
-  }
+  useEffect(() => {
+    const typed = new Typed(".text", {
+      strings: ["MERN Stack Developer","Effective Problem Solver"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+      showCursor: false,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
+  const openLink = (url) => {
+    window.open(url);
+  };
   return (
     <>
-      {/* // <Box bg={"#360148"}  color={"white"} bgGradient='linear(to-br,rgb(54 0 72),rgb(65 2 87),rgb(87 1 117),rgb(115 0 146),rgb(123 0 152))'  height={"100vh"}> */}
       <Flex
-        bg={"black"}
-        color={"white"}
-        // minH={"100vh"}
+        flexDirection={{
+          base: "column",
+          sm: "column",
+          md: "column",
+          lg: "row",
+          xl: "row",
+          "2xl": "row",
+        }}
+        bg={"#18112C"}
         justifyContent={"space-around"}
         alignItems={"center"}
+        gap="60px"
         id="home"
-        
+        p="50px"
+        color={"white"}
+        border="none"
       >
-        {/* <Flex justifyContent={"space-between"}> */}
-        <Box
-        
-       
-        >
-          <Heading as="h4" size={"md"} className="head" >
-            Hello 👋 I'M
-          </Heading>
-
-          <Flex data-aos="zoom-out"  id="user-detail-name">
-            <Heading
-              mt="20px"
-              // bgGradient="linear(to-l, #7928CA, #FF0080)"
-              // bgGradient="linear(to-l, #636363, #a2ab58)"
-              // bgGradient="linear(to-l, #3E5151, #DECBA4)"
-              bgGradient="linear(to-r, #76446b, #A8CABA)"
-              // bgGradient="linear(to-r, #e9d362, #333333)"
-              // bgGradient="linear(to-br, #403B4A, #E7E9BB)"
-              // bgGradient="linear(to-l, #556270, #FF6B6B)"
-              bgClip="text"
-              as={"h1"}
-              size={"4xl"}
-            >
-              Sharvari
+        <Box>
+          <Box id="home-content">
+            <Heading mt="10px" size="lg" as="h3" className="head">
+              Hi, It's Me
             </Heading>
-
-            <Heading
-              ml="20px"
-              mt="20px"
-              bgGradient="linear(to-r, #76446b, #A8CABA)"
-              bgClip="text"
-              as={"h1"}
-              size={"4xl"}
-            >
-              Hupare
+            <Heading mt="10px" size="2xl" as="h1" id="user-detail-name">
+              Sharvari Hupare
             </Heading>
-          </Flex>
-          <Heading as={"h2"} size={"xl"} mt="40px" className="head">
-            Full Stack Web Developer
-          </Heading>
-        <Box mt="40px" >
-
-          <Link  
-          id="resume-link-2"
-            href={resume} download={true} >
-              <Button  id="resume-button-2" onClick={()=>openLink("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=drive_link")}  mr="20px"
-            _hover={{
-              bgGradient: "linear(to-r,#3fada8, purple.500)",
-            }} color="white" p="10px 40px" borderRadius={"5px"} bgGradient="linear(to-l,#304352, #3fada8)" >
-              Resume 
-              </Button>
-
-              </Link>
-                
-                </Box>
-
+            <Heading mt="10px" size="lg" as="h3">
+              And I'm a <span className="text"></span>
+              <span style={{ color: "#0ef", marginLeft: "3px" }}>|</span>
+            </Heading>
+            <Text fontSize={"20px"} mt="10px">
+              I'm a web developer and my <br />
+              expertise is to create and responsive websites, Frontend developer{" "}
+            </Text>
+            <Link
+              mt="10px"
+              fontWeight="bold"
+              borderRadius="5px"
+              backgroundImage="linear-gradient(to right, #01b395, #03bd69)"
+              id="resume-link-2"
+              href={resume}
+              download={true}
+              target="_blank"
+            >
+              <Box className="home-icon">
+                <Button
+                  mt="40px"
+                  id="resume-button-2"
+                  background="#0ef"
+                  onClick={()=>openLink("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=sharing")}
+                  className="home-resume btn-box"
+                >
+                  Download Resume
+                </Button>
+              </Box>
+            </Link>
+          </Box>
         </Box>
-        <Box  mt="40px">
-    <Image src={myimage} className="home-img"  boxShadow='outline' borderColor={"#76446b"}  alt="myPic" style={{width:"500px" , borderRadius:"50%"}} />
-    </Box>
-    
+
+        <Image
+          src={myimage}
+          className="home-img"
+          boxShadow="outline"
+          borderColor={"#76446b"}
+          alt="myPic"
+          width="30%"
+          height="60%"
+          borderRadius="50%"
+        />
       </Flex>
     </>
   );

@@ -36,7 +36,7 @@ export const Github = () => {
 
         <Box  display={"inline-block"}
             padding="10px"
-            bgGradient="linear(to-r, #1a9a7c, #5c0c5c)"
+            bgGradient="linear(to-r, #0ef, cyan.500)"
             borderRadius={"8px"}
             className="tech-skill-heading"
             data-aos="flip-right"
@@ -55,7 +55,7 @@ export const Github = () => {
 
           <Box  display={"inline-block"}
             padding="10px"
-            bgGradient="linear(to-r, #1a9a7c, #5c0c5c)"
+            bgGradient="linear(to-r, #0ef, cyan.500)"
             borderRadius={"8px"}
             className="tech-skill-heading"
             // data-aos="flip-right"
@@ -72,7 +72,7 @@ export const Github = () => {
           <Box>
           <Box display={"inline-block"}
             padding="10px"
-            bgGradient="linear(to-r, #1a9a7c, #5c0c5c)"
+            bgGradient="linear(to-r, #0ef, cyan.500)"
             borderRadius={"8px"}
             className="tech-skill-heading"
             data-aos="flip-right"
@@ -95,7 +95,7 @@ export const Github = () => {
           <Box  display={"inline-block"}
         //   data-aos="fade-"
             padding="10px"
-            bgGradient="linear(to-r, #1a9a7c, #5c0c5c)"
+            bgGradient="linear(to-r, #0ef, cyan.500)"
             borderRadius={"8px"}
             className="tech-skill-heading"
             data-aos="flip-right"

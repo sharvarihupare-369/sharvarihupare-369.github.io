@@ -4,14 +4,16 @@ import AOS from "aos";
 import { Link } from "react-router-dom";
 import resume from '../Assets/Resume/Sharvari-Hupare-Resume.pdf'
 
+
 const About = () => {
   useEffect(() => {
     AOS.init({ delay: 300 });
   }, []);
   return (
+    <>
+
     <Box
-    // position={"fixed"}
-   
+    b="none"
     textAlign={"center"}
       id="about"
       className="about section"
@@ -20,40 +22,40 @@ const About = () => {
     >
      
 
+
       <Heading
-       mt="150px"
+        mt="50px"
         className="aboutmehead"
         display={"inline-block"}
         padding="10px"
-        bgGradient="linear(to-r, #1a9a7c, #5c0c5c)"
-        borderRadius={"8px"}
         data-aos="fade-right"
         ml="80px"
         mb="45px"
-        as={"h2"}
-        size={"xl"}
+        
+        size="2xl"
+        as="h1"
       >
-
-        About ME
+        About<span style={{color:"#0ef"}}>ME</span>
       </Heading>
-      <Flex justifyContent={"space-around"} alignItems={"center"}>
-        <Box data-aos="zoom-out">
+      <Flex justifyContent={"space-around"} direction={{base : 'column', sm : 'column', md : 'column', lg : 'row', xl : 'row', '2xl' : 'row'}} gap="30px" alignItems={"center"}>
+        <Box w={{base:"90%",sm:"90%",md:"70%",lg:"50%",xl:"40%","2xl":"40%"}}  data-aos="zoom-out">
           <Image
+            w="100%"
             border={"1px inset"}
             boxShadow="dark-md"
             p="6"
             rounded="md"
             src="https://img.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg?w=1060&t=st=1685370746~exp=1685371346~hmac=798fa5f314f08de3ed48799ae92da10f0aa89da9bb03b9e3ddf6236ae63fe4c"
-            w="500px"
+           
             borderRadius={"10px"}
           />
         </Box>
-        <Box w={"50%"}>
+        <Box  w={{base:"90%",sm:"90%",md:"70%",lg:"50%",xl:"50%","2xl":"50%"}}>
           <Text
             id="user-detail-intro"
             data-aos="fade-right"
             fontSize={"22px"}
-            color={"#00B0FF"}
+            color={"white"}
             textAlign={"left"}
           >
             An Adaptive full-stack web developer with a great passion for
@@ -71,6 +73,7 @@ const About = () => {
 
       
     </Box>
+            </>
   );
 };
 

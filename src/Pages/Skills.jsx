@@ -10,17 +10,16 @@ import npm from '../Assets/TechStacks/npm.png'
 import vscode from '../Assets/TechStacks/vscode3.png'
 import postman from '../Assets/TechStacks/postman-logo-0087CA0D15-seeklogo.com.png'
 import node from '../Assets/TechStacks/nodejs-1-logo.png'
+import {BiLogoMongodb} from 'react-icons/bi'
+import {SiMongodb} from 'react-icons/si'
 
 const Skills = () => {
-  // 162a33
+
   return (
     <Box
       id="skills"
       bg={"black"}
       color={"white"}
-      // minH={"100v  h"}
-      // margin="50px auto"
-      // width="80%"
       textAlign={"center"}
       p={"100px"}
     >
@@ -29,15 +28,16 @@ const Skills = () => {
         className="tech-stacks"
         display={"inline-block"}
         padding="10px"
-        bgGradient="linear(to-r, #1a9a7c, #5c0c5c)"
-        borderRadius={"8px"}
         data-aos="fade-right"
-       
+        color={"#0ef"}
+       size="2xl"
+       as="h1"
       >
-        My Technical Skills
+        Technical Skills
       </Heading>
       <Grid
-        templateColumns={{ base: "repeat(4,1fr)", lg: "repeat(5,1fr)" }}
+      templateColumns={{ base: "repeat(2,1fr)", sm : 'repeat(3,1fr)', md : 'repeat(4,1fr)', lg: "repeat(5,1fr)",xl: "repeat(5,1fr)" ,"2xl": "repeat(5,1fr)"}}
+       
         rowGap="60px"
         margin="50px auto"
         alignItems={{ base: "center", sm: "center", md: "center" }}
@@ -100,6 +100,7 @@ const Skills = () => {
         <Box id="vscode"
           p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
           <Image  m="auto" borderRadius={"50%"} width="80%" src={vscode} className="skills-card-img" />
+         {/* <SiMongodb className="skills-card-img" style={{width:"80%" }}  /> */}
           <Heading className="skills-card-name"></Heading>
         </Box>
         <Box id="postman"
