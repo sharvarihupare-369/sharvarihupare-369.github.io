@@ -8,6 +8,8 @@ import Contact from './Pages/Contact';
 import Projects from './Pages/Projects';
 import Skills from './Pages/Skills';
 import { Github } from './Pages/Github';
+import Tools from './Pages/Tools';
+import Footer from './Pages/Footer';
 
 function App() {
   return (
@@ -18,9 +20,11 @@ function App() {
     <Home/>
     <About/>
     <Skills/>
+    <Tools/>
     <Projects/>
     <Github/>
     <Contact/>
+    <Footer/>
 
     </div>
   );

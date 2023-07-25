@@ -30,7 +30,7 @@ export const Github = () => {
 
 
   return (
-    <Box cursor={"pointer"} p="10px"  className='react-activity-calender'  textAlign={"center"} id='projects' bg={"black"}
+    <Box cursor={"pointer"}   bg={"#18112C"} p="10px"  className='react-activity-calender'  textAlign={"center"} id='projects' 
     color={"white"}>
         <Box>
 
@@ -53,7 +53,7 @@ export const Github = () => {
           <Box>
 
 
-          <Box  display={"inline-block"}
+          <Box w="30%" display={"inline-block"}
             padding="10px"
             bgGradient="linear(to-r, #0ef, cyan.500)"
             borderRadius={"8px"}
@@ -70,7 +70,7 @@ export const Github = () => {
           </Box>
 
           <Box>
-          <Box display={"inline-block"}
+          <Box w="30%" display={"inline-block"}
             padding="10px"
             bgGradient="linear(to-r, #0ef, cyan.500)"
             borderRadius={"8px"}
@@ -94,6 +94,7 @@ export const Github = () => {
          
           <Box  display={"inline-block"}
         //   data-aos="fade-"
+           
             padding="10px"
             bgGradient="linear(to-r, #0ef, cyan.500)"
             borderRadius={"8px"}

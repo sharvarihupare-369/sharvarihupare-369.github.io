@@ -102,6 +102,7 @@ const Home = () => {
         </Box>
 
         <Image
+         id="mypic"
           src={myimage}
           className="home-img"
           boxShadow="outline"

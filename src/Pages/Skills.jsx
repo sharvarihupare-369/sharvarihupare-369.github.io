@@ -11,14 +11,21 @@ import vscode from '../Assets/TechStacks/vscode3.png'
 import postman from '../Assets/TechStacks/postman-logo-0087CA0D15-seeklogo.com.png'
 import node from '../Assets/TechStacks/nodejs-1-logo.png'
 import {BiLogoMongodb} from 'react-icons/bi'
-import {SiMongodb} from 'react-icons/si'
+import {SiChakraui, SiMongodb, SiRedux, SiTypescript} from 'react-icons/si'
+import {AiFillHtml5} from 'react-icons/ai'
+import {FaCss3Alt} from 'react-icons/fa'
+import {IoLogoJavascript} from 'react-icons/io'
+import { GrReactjs } from "react-icons/gr";
+import { DiMongodb, DiNodejsSmall } from "react-icons/di";
+import { TbBrandCypress } from "react-icons/tb";
 
 const Skills = () => {
 
   return (
     <Box
       id="skills"
-      bg={"black"}
+      // bg={"black"}
+      bg={"#18112C"}
       color={"white"}
       textAlign={"center"}
       p={"100px"}
@@ -50,7 +57,8 @@ const Skills = () => {
           className="skills-card"
           
         >
-          <Image  m="auto" width="80%" src={html} className="skills-card-img" />
+          {/* <Image  m="auto" width="80%" src={html} className="skills-card-img" /> */}
+          <AiFillHtml5 fontSize={"65px"} style={{ margin:"auto" }} color="#e54c21" className="skills-card-img"/>
           <Heading  className='skills-card-name' ></Heading>
         </Box>
         <Box
@@ -59,7 +67,8 @@ const Skills = () => {
           width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
           className="skills-card"
         >
-          <Image m="auto" width="80%" src={css} className="skills-card-img" />
+          {/* <Image m="auto" width="80%" src={css} className="skills-card-img" /> */}
+          <FaCss3Alt fontSize={"65px"} style={{ margin:"auto" }} color="#254bdd"  className="skills-card-img" />
           <Heading className='skills-card-name'></Heading>
         </Box>
         <Box
@@ -68,7 +77,8 @@ const Skills = () => {
           width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
           className="skills-card"
         >
-          <Image m="auto"  width="80%" src={js} className="skills-card-img" />
+          {/* <Image m="auto"  width="80%" src={js} className="skills-card-img" /> */}
+          <IoLogoJavascript fontSize={"65px"} style={{ margin:"auto" }} color="#e2c430"  className="skills-card-img" />
           <Heading className='skills-card-name'></Heading>
         </Box>
         <Box
@@ -77,41 +87,46 @@ const Skills = () => {
           width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
           className="skills-card"
         >
-          <Image m="auto"  width="80%" src={react} className="skills-card-img" />
+        
+          <GrReactjs fontSize={"65px"} style={{ margin:"auto" }} color="#5ed3f3"  className="skills-card-img" />
           <Heading className='skills-card-name'></Heading>
         </Box>
         <Box  id="redux"
           p="10px"
           width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
-          <Image m="auto" borderRadius={"50%"} width="80%" src={redux1} className="skills-card-img" />
+        
+          <SiRedux fontSize={"65px"} style={{ margin:"auto" }} color="#7248b6"  className="skills-card-img" />
           <Heading className="skills-card-name"></Heading>
         </Box>
         <Box id="chakra"
           p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
-          <Image  m="auto" borderRadius={"50%"} width="80%" src={chakra} className="skills-card-img" />
+    
+          <SiChakraui fontSize={"65px"} style={{ margin:"auto" }} color="#50c4c0"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
         <Box id="npm"
           p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
-          <Image  m="auto" borderRadius={"50%"} width="80%" src={npm} className="skills-card-img" />
+    
+          <SiTypescript fontSize={"65px"} style={{ margin:"auto" }} color="#2f74c0"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
 
-        <Box id="vscode"
+        <Box id="mongodb"
           p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
-          <Image  m="auto" borderRadius={"50%"} width="80%" src={vscode} className="skills-card-img" />
-         {/* <SiMongodb className="skills-card-img" style={{width:"80%" }}  /> */}
+       
+         <DiMongodb fontSize={"65px"} style={{ margin:"auto" }} color="#3ca02e"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
-        <Box id="postman"
+        <Box id="cypress"
           p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
-          <Image  m="auto" borderRadius={"50%"} width="80%" src={postman} className="skills-card-img" />
+      
+          <TbBrandCypress fontSize={"65px"} style={{ margin:"auto" }} color="#306158"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
 
-        <Box id="node"
-          p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
-          <Image  m="auto" borderRadius={"50%"} width="80%" src={node} className="skills-card-img" />
+        <Box id="node"  p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+         
+          <DiNodejsSmall fontSize={"65px"} style={{ margin:"auto" }} color="#3f873b"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
       </Grid>

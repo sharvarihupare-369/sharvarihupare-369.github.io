@@ -17,7 +17,8 @@ const About = () => {
     textAlign={"center"}
       id="about"
       className="about section"
-      bg={"black"}
+      // bg={"black"}
+      bg={"#18112C"}
       color={"white"}
     >
      

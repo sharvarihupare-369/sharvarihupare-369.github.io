@@ -9,30 +9,12 @@
   font-family:  cursive;
 }
 
-/* .animate__animated animate__zoomInDown{
-  --animation-duration: 10s;
-  --animate-delay: 0.9s;
-} */
 
 
-/* .myphoto{
-  transition: 1s ease;
- } */
- /* .myphoto:hover{
- -webkit-transform: scale(1.2);
- -ms-transform: scale(1.2);
- transform: scale(1.1);
- transition: 1s ease;
- }
- .home-icon{
-  transition: 1s ease;
- }
- .home-icon:hover{
- -webkit-transform: scale(1.2);
- -ms-transform: scale(1.2);
- transform: scale(1.1);
- transition: 1s ease;
- } */
+#mypic{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #000 0px 6px 6px;
+
+}
 
  #html{
   /* border: 1px inset #FC490B; */
@@ -129,41 +111,32 @@
 
 
 #npm{
-  /* border: 1px inset #CDDC39; */
-  /* box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px; */
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #CD0000 0px 6px 6px;
+ 
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #c53635 0px 6px 6px;
   border-radius: 10%;
   padding-top: 10%;
 
  }
 
- /* #npm:hover{
-  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+
+
+ #mongodb{
+  
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #3ca02e 0px 6px 6px;
   border-radius: 10%;
   padding-top: 10%;
-}
- */
+
+ }
 
  #vscode{
-  /* border: 1px inset #CDDC39; */
-  /* box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px; */
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #5865F2 0px 6px 6px;
-  border-radius: 10%;
-  padding-top: 10%;
-
- }
-
- /* #vscode:hover{
-  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #0082ca 0px 6px 6px;
   border-radius: 10%;
   padding-top: 10%;
 }
- */
 
- #postman{
-  /* border: 1px inset #CDDC39; */
-  /* box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px; */
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #FF6C37 0px 6px 6px;
+
+ #cypress{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #306158 0px 6px 6px;
   border-radius: 10%;
   padding-top: 10%;
 
@@ -179,24 +152,48 @@
 
  
  #node{
-  /* border: 1px inset #CDDC39; */
-  /* box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px; */
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #3F8B3A 0px 6px 6px;
   border-radius: 10%;
   padding-top: 10%;
 
  }
 
- /* #node:hover{
-  box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
+ 
+
+
+ 
+
+#github{
+ 
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #fff 0px 6px 6px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+
+ #netlify{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #24c1b1 0px 6px 6px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+
+ 
+ #vercel{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #000 0px 6px 6px;
+  border-radius: 10%;
+  padding-top: 10%;
+
+ }
+
+#slack{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #e5ac2d 0px 6px 6px;
   border-radius: 10%;
   padding-top: 10%;
 }
- */
 
-/* 
- #project-sec:hover{ 
-  box-shadow: #162a33 0px 19px 38px, #BF360C 0px 15px 12px;
-  
- } */
-
+#postman{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #f76935 0px 6px 6px;
+  border-radius: 10%;
+  padding-top: 10%;
+}

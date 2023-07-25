@@ -5,6 +5,8 @@ import Contact from '../Pages/Contact'
 import Home from '../Pages/Home'
 import Projects from '../Pages/Projects'
 import Skills from '../Pages/Skills'
+import Tools from '../Pages/Tools'
+import Footer from '../Pages/Footer'
 
 
 function AllRoutes() {
@@ -18,8 +20,12 @@ function AllRoutes() {
             <Route path="/skills" element={<Skills/>}/>
           
             <Route path="/projects" element={<Projects/>}/>
+
+            <Route path='/tools' element={<Tools/>} />
           
             <Route path="/contact" element={<Contact/>}/>
+
+            <Route path="/footer" element={<Footer/>}/>
         </Routes>
     </div>
   )

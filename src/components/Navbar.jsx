@@ -74,9 +74,9 @@ const Navbar = () => {
                                     </VStack>
                                     <HStack w={'full'} justifyContent={'space-evenly'} pos={'absolute'} bottom={'5'} left={'0'}>
                                         <Link fontWeight={'bold'} borderRadius={'5px'} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} fontFamily={'cursive'} className='nav-link resume' id='resume-button-1' href={resume} onClick={openResume} download={true} target='_blank'>
-                                            <Button download={true} onClick={()=>openResume("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=sharing")} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} _hover={'none'}>
-                                                Resume
-                                            </Button>
+                                        <Button onClick={()=>openResume("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=sharing")} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} _hover={'none'}>
+                                               Resume
+                                      </Button>
                                         </Link>
                                     </HStack>
                                 </DrawerBody>
@@ -84,11 +84,12 @@ const Navbar = () => {
                         </Drawer>
                     </Flex>
                     <Flex w={'55%'} id="navflex" alignItems={'center'} justifyContent={'space-between'} display={{ base: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex', '2xl': 'flex' }}>
-                        <HashLink  className='nav-link home' id="navbar-home" to='/#'>Home</HashLink>
-                        <HashLink className='nav-link about' id="navbar-home"   to='/#about'>About</HashLink>
-                        <HashLink className='nav-link skills' id="navbar-home" to='/#skills'>Skills</HashLink>
-                        <HashLink className='nav-link projects' id="navbar-home" to='/#projects'>Projects</HashLink>
-                        <HashLink className='nav-link contact' id="navbar-home" to='/#contact'>Contact</HashLink>
+                        <HashLink  className='nav-link home' id="navbar-home" smooth to='/#'>Home</HashLink>
+                        <HashLink className='nav-link about' id="navbar-home" smooth  to='/#about'>About</HashLink>
+                        <HashLink className='nav-link skills' id="navbar-home" smooth to='/#skills'>Skills</HashLink>
+                        <HashLink className='nav-link projects' id="navbar-home" smooth  to='/#projects'>Projects</HashLink>
+                       
+                        <HashLink className='nav-link contact' id="navbar-home" smooth  to='/#contact'>Contact</HashLink>
                         <Link fontWeight={'bold'} borderRadius={'5px'} backgroundImage={'linear-gradient(to right, #0ef, cyan.50)'} fontFamily={'cursive'} className='nav-link resume' id='resume-button-1' href={resume} download={true} target='_blank'>
                             <Button onClick={()=>openResume("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=sharing")} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} _hover={'none'}>
                                 Resume
