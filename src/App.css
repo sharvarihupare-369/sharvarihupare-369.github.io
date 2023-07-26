@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 .App{
-  font-family:  cursive;
+  /* font-family:  cursive; */
   box-sizing: border-box;
 }
 
@@ -93,6 +93,16 @@
   padding-top: 10%;
 } */
 
+
+/* 2f74c0 */
+
+#typescript{
+  /* border: 1px inset #CDDC39; */
+  /* box-shadow: #689F38 0px 19px 38px, #ef8967 0px 15px 12px; */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #2f74c0 0px 6px 6px;
+  border-radius: 10%;
+  padding-top: 10%;
+ }
 
 #chakra{
   /* border: 1px inset #CDDC39; */

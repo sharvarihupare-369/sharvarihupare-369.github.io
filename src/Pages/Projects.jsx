@@ -41,7 +41,7 @@ const Projects = () => {
 
     
 
- <Box id="project-sec" _hover={{ bg:"#301f5f"}}  borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset"} className='project-card'>
+ <Box id="project-sec"  data-aos="fade-right" _hover={{ bg:"#301f5f",border:"1px solid #18112C"}}  borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset #18112C"} className='project-card'>
           <Flex gap={'30px'} justifyContent={"space-evenly"} direction={{base : 'column-reverse', sm : 'column-reverse', md : 'column-reverse', lg : 'row', xl : 'row', '2xl' : 'row'}}>
 
             <Box w={{base : '100%', sm : '100%', md : '100%', lg : '100%', xl : '100%', '2xl' : '100%'}} >
@@ -50,7 +50,7 @@ const Projects = () => {
                 <BiFolder style={{ fontSize: "40px", color: "#388E3C" }} />
                 <Box>
                   <Flex>
-                  <Link href="https://github.com/sharvarihupare-369/wired-cover-3187/tree/main/mediverse" className='project-github-link'><FaGithub style={{fontSize:"40px"}} /></Link>
+                  <Link href="https://github.com/sharvarihupare-369/wired-cover-3187" className='project-github-link'><FaGithub style={{fontSize:"40px"}} /></Link>
               <Link href="https://mediverse-five.vercel.app/" className='project-deployed-link'> <BiCopy  style={{fontSize:"40px", marginLeft:"5px"}} /></Link>
              
                   </Flex>
@@ -84,7 +84,7 @@ const Projects = () => {
         </Box>
 
 
-      <Box id="project-sec"   _hover={{ bg:"#301f5f"}}  borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset"} className='project-card'>
+      <Box id="project-sec"  data-aos="fade-left"  _hover={{ bg:"#301f5f",border:"1px solid #18112C"}}   borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset #18112C"} className='project-card'>
           <Flex gap={'30px'} justifyContent={"space-evenly"} direction={{base : 'column-reverse', sm : 'column-reverse', md : 'column-reverse', lg : 'row', xl : 'row', '2xl' : 'row'}}>
 
             <Box w={{base : '100%', sm : '100%', md : '100%', lg : '100%', xl : '100%', '2xl' : '100%'}} >
@@ -119,7 +119,7 @@ const Projects = () => {
               </Box>
             </Box>
             <Box w={{base : '100%', sm : '100%', md : '100%', lg : '100%', xl : '100%', '2xl' : '100%'}}>
-              <Image w="100%" h="280px" src={beautiq} />
+              <Image w="100%"  src={beautiq} />
             </Box>
           </Flex>
         </Box>
@@ -127,7 +127,7 @@ const Projects = () => {
 
 
 
-        <Box id="project-sec" _hover={{ bg:"#301f5f"}}  borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset"} className='project-card'>
+        <Box id="project-sec"  data-aos="fade-right" _hover={{ bg:"#301f5f",border:"1px solid #18112C"}}  borderRadius={"10px"} p="20px" w="80%" m="40px auto"  border={"1px inset #18112C"} className='project-card'>
           <Flex gap={'30px'} justifyContent={"space-evenly"} direction={{base : 'column-reverse', sm : 'column-reverse', md : 'column-reverse', lg : 'row', xl : 'row', '2xl' : 'row'}}>
 
             <Box w={{base : '100%', sm : '100%', md : '100%', lg : '100%', xl : '100%', '2xl' : '100%'}} >
@@ -176,7 +176,7 @@ const Projects = () => {
 
       
 
-      <Box id="project-sec"   _hover={{ bg:"#301f5f"}}  borderRadius={"10px"} p="20px" w="80%" m="40px auto" border={"1px inset"} className='project-card'>
+      <Box id="project-sec"  data-aos="fade-left"  _hover={{ bg:"#301f5f",border:"1px solid #18112C"}}  borderRadius={"10px"} p="20px" w="80%" m="40px auto"  border={"1px inset #18112C"} className='project-card'>
           <Flex gap={'30px'} justifyContent={"space-evenly"} direction={{base : 'column-reverse', sm : 'column-reverse', md : 'column-reverse', lg : 'row', xl : 'row', '2xl' : 'row'}}>
 
             <Box w={{base : '100%', sm : '100%', md : '100%', lg : '100%', xl : '100%', '2xl' : '100%'}} >

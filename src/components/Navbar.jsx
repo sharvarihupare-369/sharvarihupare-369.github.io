@@ -35,7 +35,7 @@ const Navbar = () => {
         <Box  bg="#171518" boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' position="sticky" zIndex={"overlay"} top='0' className={'bg'} color={'white'} p={'12px 0'} fontSize={'19px'}>
             <nav id='nav-menu' className='nav-menu'>
                 <Flex m='0 30px' p={'10px'} alignItems={'center'} justifyContent={'space-between'}>
-                    <Box color={'#0ef'} fontWeight={'extrabold'} className='nav-logo' fontSize='30px' textAlign='start' w={'20%'}>
+                    <Box w="40%" color={'#0ef'} fontWeight={'extrabold'} className='nav-logo' fontSize='30px' textAlign='start' >
                         {'< S/>'}
                     </Box>
                     <Flex p={'10px'} justifyContent={'space-between'} mt={'10px'} alignItems={'center'}>

@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <Flex color={'gray.300'} fontSize={'20px'} bg={'black'} p={'20px'} alignContent={'center'} justifyContent={'space-between'}>
-    <Box fontWeight={'bold'}  color={'#0ef'}>{'< S/>'}</Box>
-    <Box display={"flex"} alignItems={"center"}>This site is made with  <FaHeart color='red' style={{margin:"5px"}} /> by <span style={{color : '#0ef',marginLeft:"3px"}}> Sharvari Hupare !</span></Box>
-     <Box>
-        <Flex justifyContent={"space-between"} alignItems={"center"}>
+    <Flex  gap="15px" boxSizing='border-box' alignItems={'center'} flexDirection={{base:"column",sm:"column",md:"column",lg:"row",xl:"row","2xl":"row"}} color={'gray.300'} fontSize={'20px'} bg={'black'} p={'10px'} alignItems={'center'} justifyContent="space-between">
+    <Box   fontWeight={'bold'}  color={'#0ef'}>{'< S/>'}</Box>
+    <Box display={"flex"} alignItems={"center"}>Made with <span> <FaHeart color='red' style={{margin:"0 5px"}} /></span> by <span style={{color : '#0ef',marginLeft:"3px"}}> Sharvari Hupare !</span></Box>
+     <Flex alignItems={'center'}  >
+     
         <Link to="https://github.com/sharvarihupare-369"  >
             <FaGithub  fontSize={"35px"}/>
         </Link>
@@ -17,8 +17,8 @@ const Footer = () => {
             <FaLinkedin style={{marginLeft:"20px"}} color='#0e76a8' fontSize={"35px"}/>
         </Link>
 
-        </Flex>
-     </Box>
+        
+     </Flex>
  </Flex>
   )
 }

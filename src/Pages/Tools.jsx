@@ -18,10 +18,10 @@ const Tools = () => {
       bg={"#18112C"}
       color={"white"}
       textAlign={"center"}
-      p={"100px"}
+     
     >
       <Heading
-     
+        m={"50px 0"}
         className="tech-stacks"
         display={"inline-block"}
         padding="10px"
@@ -36,14 +36,15 @@ const Tools = () => {
       templateColumns={{ base: "repeat(2,1fr)", sm : 'repeat(2,1fr)', md : 'repeat(3,1fr)', lg: "repeat(4,1fr)",xl: "repeat(4,1fr)" ,"2xl": "repeat(4,1fr)"}}
        
         rowGap="60px"
-        margin="50px auto"
+        // margin="50px auto"
+        placeItems={"center"}
         alignItems={{ base: "center", sm: "center", md: "center" }}
-        marginLeft="10%"
+       
       >
         <Box
         id="github"
           p="10px"
-          width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
+          width={{ base: "60%", sm: "50%", md: "30%", lg: "30%" }}
           className="skills-card"
           
         >
@@ -53,7 +54,7 @@ const Tools = () => {
         <Box
          id="netlify"
           p="10px"
-          width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
+           width={{ base: "60%", sm: "50%", md: "30%", lg: "30%" }}
           className="skills-card"
         >
          <SiNetlify fontSize={"65px"} style={{ margin:"auto" }} color="#24c1b1"   className="skills-card-img"/>
@@ -63,7 +64,7 @@ const Tools = () => {
         <Box
           id="vercel"
           p="10px"
-          width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
+            width={{ base: "60%", sm: "50%", md: "30%", lg: "30%" }}
           className="skills-card"
         >
        <SiVercel fontSize={"65px"} style={{ margin:"auto" }} color="black"   className="skills-card-img"/>
@@ -72,7 +73,7 @@ const Tools = () => {
         <Box
          id="vscode"
           p="10px"
-          width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
+            width={{ base: "60%", sm: "50%", md: "30%", lg: "30%" }}
           className="skills-card"
         >
          <TbBrandVscode fontSize={"65px"} style={{ margin:"auto" }} color="#0082ca"   className="skills-card-img"/>
@@ -81,25 +82,25 @@ const Tools = () => {
         <Box 
         id="npm" 
           p="10px"
-          width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+            width={{ base: "60%", sm: "50%", md: "30%", lg: "30%" }} className="skills-card">
         <ImNpm fontSize={"65px"} style={{ margin:"auto" }} color="#c53635"   className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
         <Box 
         id="slack"
-          p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+          p="10px"   width={{ base: "60%", sm: "50%", md: "30%", lg: "30%" }} className="skills-card">
          <FaSlack  fontSize={"65px"} style={{ margin:"auto" }} color="#e5ac2d"   className="skills-card-img" />
           <Heading className="skills-card-name"></Heading>
         </Box>
         <Box 
         id="postman"
-          p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+          p="10px"   width={{ base: "60%", sm: "50%", md: "30%", lg: "30%" }} className="skills-card">
           <SiPostman fontSize={"65px"} style={{ margin:"auto" }} color="#f76935"   className="skills-card-img"  />
           <Heading className="skills-card-name"></Heading>
         </Box>
 
         {/* <Box id="vscode"
-          p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+          p="10px"   width={{ base: "60%", sm: "50%", md: "30%", lg: "30%" }} className="skills-card">
            {/* <BiLogoZoom/> */}
           {/* <Heading className="skills-card-name"></Heading> */}
         {/* </Box> */}

@@ -28,10 +28,11 @@ const Skills = () => {
       bg={"#18112C"}
       color={"white"}
       textAlign={"center"}
-      p={"100px"}
+      p="20px"
+      
     >
       <Heading
-       mt="40px"
+       m="50px 0"
         className="tech-stacks"
         display={"inline-block"}
         padding="10px"
@@ -46,14 +47,15 @@ const Skills = () => {
       templateColumns={{ base: "repeat(2,1fr)", sm : 'repeat(3,1fr)', md : 'repeat(4,1fr)', lg: "repeat(5,1fr)",xl: "repeat(5,1fr)" ,"2xl": "repeat(5,1fr)"}}
        
         rowGap="60px"
-        margin="50px auto"
+        // margin="50px auto"
+        placeItems={"center"}
         alignItems={{ base: "center", sm: "center", md: "center" }}
-        marginLeft="10%"
+        
       >
         <Box
           id="html"
           p="10px"
-          width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
+          width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }}
           className="skills-card"
           
         >
@@ -64,7 +66,7 @@ const Skills = () => {
         <Box
           id="css"
           p="10px"
-          width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
+          width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }}
           className="skills-card"
         >
           {/* <Image m="auto" width="80%" src={css} className="skills-card-img" /> */}
@@ -74,7 +76,7 @@ const Skills = () => {
         <Box
           id="js"
           p="10px"
-          width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
+          width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }}
           className="skills-card"
         >
           {/* <Image m="auto"  width="80%" src={js} className="skills-card-img" /> */}
@@ -84,7 +86,7 @@ const Skills = () => {
         <Box
           id="react"
           p="10px"
-          width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }}
+          width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }}
           className="skills-card"
         >
         
@@ -93,38 +95,38 @@ const Skills = () => {
         </Box>
         <Box  id="redux"
           p="10px"
-          width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+          width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
         
           <SiRedux fontSize={"65px"} style={{ margin:"auto" }} color="#7248b6"  className="skills-card-img" />
           <Heading className="skills-card-name"></Heading>
         </Box>
         <Box id="chakra"
-          p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+          p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
     
           <SiChakraui fontSize={"65px"} style={{ margin:"auto" }} color="#50c4c0"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
-        <Box id="npm"
-          p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+        <Box id="typescript"
+          p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
     
           <SiTypescript fontSize={"65px"} style={{ margin:"auto" }} color="#2f74c0"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
 
         <Box id="mongodb"
-          p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+          p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
        
          <DiMongodb fontSize={"65px"} style={{ margin:"auto" }} color="#3ca02e"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
         <Box id="cypress"
-          p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+          p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
       
           <TbBrandCypress fontSize={"65px"} style={{ margin:"auto" }} color="#306158"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
 
-        <Box id="node"  p="10px" width={{ base: "90%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+        <Box id="node"  p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
          
           <DiNodejsSmall fontSize={"65px"} style={{ margin:"auto" }} color="#3f873b"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>

@@ -105,7 +105,8 @@ const Contact = () => {
         color={"white"}
         className="about section"
         textAlign={"center"}
-         h="100vh"
+        //  h="100vh"
+        pb="20px"
       >
         <Heading
           className="contact-heading"
@@ -126,17 +127,17 @@ const Contact = () => {
         <Box p="20px" m="20px">
           <Container>
           <form ref={form} onSubmit={sendEmail}>
-          <Box mb="20px">
+          <Box   mb="20px">
             
-            <Input type="text" name="to_name"  value={formData.to_name} onChange={(e)=>handleChange(e)} placeholder="Enter your name" />
+            <Input type="text" name="to_name"  value={formData.to_name} onChange={(e)=>handleChange(e)} placeholder="Name" />
           </Box>
             <Box mb="20px">
             
-              <Input type="email" name="from_name" value={formData.from_name} onChange={(e)=>handleChange(e)} placeholder="Enter your email" />
+              <Input type="email" name="from_name" value={formData.from_name} onChange={(e)=>handleChange(e)} placeholder="Email" />
             </Box>
             <Box>
            
-              <Textarea name="message" value={formData.message} onChange={(e)=>handleChange(e)} placeholder="Write your message here..."></Textarea>
+              <Textarea name="message" value={formData.message} onChange={(e)=>handleChange(e)} placeholder="Message"></Textarea>
             </Box>
             <Box mt="30px">
               <Link>
@@ -147,16 +148,29 @@ const Contact = () => {
                   _hover={{
                     bgGradient: "linear(to-r, #0ef, cyan.500)",
                   }}
+                  fontFaminly="cursive"
                   color="white"
                   p="10px 40px"
                   borderRadius={"5px"}
                   bgGradient="linear(to-l,#0ef, cyan.500)"
                 >
-                  Contact Me
+                  Send
                 </Button>
               </Link>
             </Box>
             </form>
+            
+          </Container>
+          <Container>
+
+          <Box  mt="15px" cursor={"pointer"}  bgGradient="linear(to-l,#0ef, cyan.500)"   borderRadius={'5px'} p={'10px 40px'} border={'1px outset'}>
+          <Text><FiPhoneCall color="black"   style={{ margin: 'auto', fontSize: '35px' }} /></Text>
+          <Text color="black" id='contact-phone'>+918007015254</Text>
+        </Box>
+        <Box  mt="15px" cursor={"pointer"}  bgGradient="linear(to-l,#0ef, cyan.500)" borderRadius={'5px'} p={'10px 40px'} border={'1px outset'}>
+          <Text><HiOutlineMail color="black" style={{ margin: 'auto', fontSize: '45px' }} /></Text>
+          <Text color="black" id='contact-email'>sharvarihupare15@gmail.com</Text>
+        </Box>
           </Container>
         </Box>
         
@@ -173,17 +187,17 @@ const Contact = () => {
           <Link id='contact-linkedin' cursor={"pointer"} href='https://www.linkedin.com/in/sharvari-hupare15/' target='_blank'><BsLinkedin style={{ margin: 'auto', fontSize: '35px' }} /></Link>
           <Text>LinkedIn</Text>
         </Box> */}
-        <Flex flexDirection={{base:"column",sm:"column",md:"column",lg:"row",xl:"row","2xl":"row"}} justifyContent={"space-around"} alignItems={"center"}>
+        {/* <Flex flexDirection={{base:"column",sm:"column",md:"column",lg:"row",xl:"row","2xl":"row"}} alignItems={"center"}> */}
 
-        <Box w={{base:"50%",sm:"50%",md:"40%",lg:"30%",xl:"30%","2xl":"30%"}} mt="15px" cursor={"pointer"}  bgGradient="linear(to-l,#0ef, cyan.500)"   borderRadius={'5px'} p={'10px 40px'} border={'1px outset'}>
+        {/* <Box w={{base:"50%",sm:"50%",md:"40%",lg:"30%",xl:"30%","2xl":"30%"}} mt="15px" cursor={"pointer"}  bgGradient="linear(to-l,#0ef, cyan.500)"   borderRadius={'5px'} p={'10px 40px'} border={'1px outset'}>
           <Text><FiPhoneCall color="black"   style={{ margin: 'auto', fontSize: '35px' }} /></Text>
           <Text color="black" id='contact-phone'>+918007015254</Text>
         </Box>
         <Box w={{base:"50%",sm:"50%",md:"40%",lg:"30%",xl:"30%","2xl":"30%"}}  mt="15px" cursor={"pointer"}  bgGradient="linear(to-l,#0ef, cyan.500)" borderRadius={'5px'} p={'10px 40px'} border={'1px outset'}>
           <Text><HiOutlineMail color="black" style={{ margin: 'auto', fontSize: '45px' }} /></Text>
           <Text color="black" id='contact-email'>sharvarihupare15@gmail.com</Text>
-        </Box>
-        </Flex>
+        </Box> */}
+        {/* </Flex> */}
       {/* </Grid> */}
 
       </Box>

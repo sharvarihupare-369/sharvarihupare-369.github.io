@@ -13,6 +13,7 @@ import myimage from "../Assets/Mypic.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import resume from "../Assets/Resume/Sharvari-Hupare-Resume.pdf";
+import { FaGithub, FaHeart, FaLinkedin } from 'react-icons/fa'
 
 
 import "./home.css";
@@ -60,22 +61,23 @@ const Home = () => {
         color={"white"}
         border="none"
       >
-        <Box>
+        <Box >
           <Box id="home-content">
             <Heading mt="10px" size="lg" as="h3" className="head">
-              Hi, It's Me
+              Hello, I am
             </Heading>
             <Heading mt="10px" size="2xl" as="h1" id="user-detail-name">
               Sharvari Hupare
             </Heading>
             <Heading mt="10px" size="lg" as="h3">
-              And I'm a <span className="text"></span>
+            <span className="text"></span>
               <span style={{ color: "#0ef", marginLeft: "3px" }}>|</span>
             </Heading>
             <Text fontSize={"20px"} mt="10px">
               I'm a web developer and my <br />
-              expertise is to create and responsive websites, Frontend developer{" "}
+              expertise is to create awesome websites{" "}
             </Text>
+            
             <Link
               mt="10px"
               fontWeight="bold"
@@ -108,7 +110,8 @@ const Home = () => {
           boxShadow="outline"
           borderColor={"#76446b"}
           alt="myPic"
-          width="30%"
+          w={{base : '80%', sm : '80%', md : '60%', lg : '30%', xl : '30%', '2xl' : '30%'}}
+          // w="30%"
           height="60%"
           borderRadius="50%"
         />
