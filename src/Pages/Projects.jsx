@@ -137,7 +137,7 @@ const Projects = () => {
                 <Box>
                   <Flex>
                   <Link href="https://github.com/sharvarihupare-369/adorable_crownn-8253" className='project-github-link'><FaGithub style={{fontSize:"40px"}} /></Link>
-              <Link href="https://gem-garden-9rn56thm7-sharvarihupare-369.vercel.app/" className='project-deployed-link'> <BiCopy  style={{fontSize:"40px", marginLeft:"5px"}} /></Link>
+              <Link href="https://gem-garden.vercel.app/" className='project-deployed-link'> <BiCopy  style={{fontSize:"40px", marginLeft:"5px"}} /></Link>
              
                   </Flex>
                 </Box>
