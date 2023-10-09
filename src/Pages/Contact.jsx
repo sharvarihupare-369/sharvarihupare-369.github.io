@@ -114,7 +114,7 @@ const Contact = () => {
           display={"inline-block"}
           padding="10px"
           color={"#0ef"}
-          fontFamily={"cursive"}
+          // fontFamily={"cursive"}
           mb="45px"
           as={"h1"}
           size={"2xl"}

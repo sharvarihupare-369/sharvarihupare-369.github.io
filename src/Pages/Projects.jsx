@@ -26,8 +26,8 @@ const Projects = () => {
     color={"white"}
     >
       <Heading 
-      mt="40px"
-      textAlign={"center"}
+       mt="40px"
+       textAlign={"center"}
        className="projects"
         display={"inline-block"}
         padding="10px"

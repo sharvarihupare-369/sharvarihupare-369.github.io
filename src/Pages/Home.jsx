@@ -111,7 +111,7 @@ const Home = () => {
           w={{base : '80%', sm : '80%', md : '60%', lg : '30%', xl : '30%', '2xl' : '30%'}}
           // w="30%"
           height="60%"
-          borderRadius="50%"
+          borderRadius="20%"
         />
       </Flex>
     </>

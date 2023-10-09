@@ -53,8 +53,8 @@ const Navbar = () => {
                             <DrawerOverlay />
                             <DrawerContent>
                                 <DrawerCloseButton color={'white'} border={'1px solid #171518'} />
-                                <DrawerHeader fontFamily={'cursive'} color={'#0ef'}  fontWeight={'extrabold'} bg='#171518'>{'< S/>'}</DrawerHeader >
-                                <DrawerBody fontFamily={'cursive'} color={'white'} bg='#171518'>
+                                <DrawerHeader  color={'#0ef'}  fontWeight={'extrabold'} bg='#171518'>{'< S/>'}</DrawerHeader >
+                                <DrawerBody  color={'white'} bg='#171518'>
                                     <VStack alignItems={'start'}>
                                         <Button onClick={onClose} variant={'ghost'} colorScheme='gray'>
                                             <HashLink data-aos="zoom-in" className='nav-link home' style={{ textDecoration: "none" }} to='/#'>Home</HashLink>
@@ -73,7 +73,7 @@ const Navbar = () => {
                                         </Button>
                                     </VStack>
                                     <HStack w={'full'} justifyContent={'space-evenly'} pos={'absolute'} bottom={'5'} left={'0'}>
-                                        <Link fontWeight={'bold'} borderRadius={'5px'} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} fontFamily={'cursive'} className='nav-link resume' id='resume-button-1' href={resume} onClick={openResume} download={true} target='_blank'>
+                                        <Link fontWeight={'bold'} borderRadius={'5px'} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'}  className='nav-link resume' id='resume-button-1' href={resume} onClick={openResume} download={true} target='_blank'>
                                         <Button onClick={()=>openResume("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=sharing")} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} _hover={'none'}>
                                                Resume
                                       </Button>
@@ -90,7 +90,7 @@ const Navbar = () => {
                         <HashLink className='nav-link projects' id="navbar-home" smooth  to='/#projects'>Projects</HashLink>
                        
                         <HashLink className='nav-link contact' id="navbar-home" smooth  to='/#contact'>Contact</HashLink>
-                        <Link fontWeight={'bold'} borderRadius={'5px'} backgroundImage={'linear-gradient(to right, #0ef, cyan.50)'} fontFamily={'cursive'} className='nav-link resume' id='resume-button-1' href={resume} download={true} target='_blank'>
+                        <Link fontWeight={'bold'} borderRadius={'5px'} backgroundImage={'linear-gradient(to right, #0ef, cyan.50)'}  className='nav-link resume' id='resume-button-1' href={resume} download={true} target='_blank'>
                             <Button onClick={()=>openResume("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=sharing")} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} _hover={'none'}>
                                 Resume
                             </Button>
