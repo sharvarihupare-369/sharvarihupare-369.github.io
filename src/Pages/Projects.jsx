@@ -90,7 +90,7 @@ const Projects = () => {
                 <Box>
                   <Flex>
                   <Link href="https://github.com/sharvarihupare-369/fullStacktodoApp" className='project-github-link'><FaGithub style={{fontSize:"40px"}} /></Link>
-                  <Link href="https://todomanager-kbrv0hhim-sharvarihupare-369.vercel.app/login" className='project-deployed-link'> <BiCopy  style={{fontSize:"40px", marginLeft:"5px"}} /></Link>
+                  <Link href="https://todomanager-five.vercel.app/" className='project-deployed-link'> <BiCopy  style={{fontSize:"40px", marginLeft:"5px"}} /></Link>
              
                   </Flex>
                 </Box>
