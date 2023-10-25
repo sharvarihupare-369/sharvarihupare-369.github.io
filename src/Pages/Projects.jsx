@@ -14,7 +14,7 @@ import bookDigitally from '../Assets/Projects/bookDigitally.png'
 import jewellery from '../Assets/Projects/Jwellery.png'
 import AOS from "aos";
 import { IoLogoJavascript } from 'react-icons/io'
-import todoFrontpage from '../Assets/Projects/TodoFront.png'
+import todoFrontpage from '../Assets/Projects/landingPageTodo.png'
 
 const Projects = () => {
   
@@ -116,7 +116,7 @@ const Projects = () => {
               </Box>
             </Box>
             <Box w={{base : '100%', sm : '100%', md : '100%', lg : '100%', xl : '100%', '2xl' : '100%'}}>
-            <Link target='_blank' href="https://todomanager-kbrv0hhim-sharvarihupare-369.vercel.app/login" className='project-deployed-link'><Image w="100%" src={todoFrontpage}  /></Link>
+            <Link target='_blank' href="https://todomanager-five.vercel.app/" className='project-deployed-link'><Image w="100%" src={todoFrontpage}  /></Link>
              
             </Box>
           </Flex>
