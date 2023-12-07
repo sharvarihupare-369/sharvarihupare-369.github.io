@@ -1,15 +1,5 @@
 import React from "react";
 import { Box, Grid, Heading, Image } from "@chakra-ui/react";
-import html from "../Assets/TechStacks/html-5.png";
-import css from "../Assets/TechStacks/css-3.png";
-import js from "../Assets/TechStacks/js2.png";
-import react from "../Assets/TechStacks/react-icon-29.jpg";
-import redux1 from '../Assets/TechStacks/redux1.png'
-import chakra from '../Assets/TechStacks/chakra.jpg'
-import npm from '../Assets/TechStacks/npm.png'
-import vscode from '../Assets/TechStacks/vscode3.png'
-import postman from '../Assets/TechStacks/postman-logo-0087CA0D15-seeklogo.com.png'
-import node from '../Assets/TechStacks/nodejs-1-logo.png'
 import {BiLogoMongodb} from 'react-icons/bi'
 import {SiChakraui, SiMongodb, SiRedux, SiTypescript} from 'react-icons/si'
 import {AiFillHtml5} from 'react-icons/ai'
@@ -18,6 +8,8 @@ import {IoLogoJavascript} from 'react-icons/io'
 import { GrReactjs } from "react-icons/gr";
 import { DiMongodb, DiNodejsSmall } from "react-icons/di";
 import { TbBrandCypress } from "react-icons/tb";
+import { SiTailwindcss } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
 
 const Skills = () => {
 
@@ -100,16 +92,16 @@ const Skills = () => {
           <SiRedux fontSize={"65px"} style={{ margin:"auto" }} color="#7248b6"  className="skills-card-img" />
           <Heading className="skills-card-name"></Heading>
         </Box>
-        <Box id="chakra"
-          p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
-    
-          <SiChakraui fontSize={"65px"} style={{ margin:"auto" }} color="#50c4c0"  className="skills-card-img"/>
+        <Box id="node"  p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+         
+          <DiNodejsSmall fontSize={"65px"} style={{ margin:"auto" }} color="#3f873b"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
-        <Box id="typescript"
+
+        <Box id="express"
           p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
     
-          <SiTypescript fontSize={"65px"} style={{ margin:"auto" }} color="#2f74c0"  className="skills-card-img"/>
+          <SiExpress  fontSize={"65px"} style={{ margin:"auto" }} color="#000000"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
 
@@ -119,16 +111,34 @@ const Skills = () => {
          <DiMongodb fontSize={"65px"} style={{ margin:"auto" }} color="#3ca02e"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
+
+
+        
+        <Box id="typescript"
+          p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+    
+          <SiTypescript fontSize={"65px"} style={{ margin:"auto" }} color="#2f74c0"  className="skills-card-img"/>
+          <Heading className="skills-card-name"></Heading>
+        </Box>
+        <Box id="tailwind"
+          p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+      
+          <SiTailwindcss  fontSize={"65px"} style={{ margin:"auto" }} color="#36B6F2"  className="skills-card-img"/>
+          <Heading className="skills-card-name"></Heading>
+        </Box>
+
+       
         <Box id="cypress"
           p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
       
           <TbBrandCypress fontSize={"65px"} style={{ margin:"auto" }} color="#306158"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
-
-        <Box id="node"  p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
-         
-          <DiNodejsSmall fontSize={"65px"} style={{ margin:"auto" }} color="#3f873b"  className="skills-card-img"/>
+       
+        <Box id="chakra"
+          p="10px"  width={{ base: "70%", sm: "60%", md: "40%", lg: "40%" }} className="skills-card">
+    
+          <SiChakraui fontSize={"65px"} style={{ margin:"auto" }} color="#50c4c0"  className="skills-card-img"/>
           <Heading className="skills-card-name"></Heading>
         </Box>
       </Grid>

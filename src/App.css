@@ -152,6 +152,12 @@
 
  }
 
+ #tailwind{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #36B6F2 0px 6px 6px;
+  border-radius: 10%;
+  padding-top: 10%;
+ }
+
  /* #npm:hover{
   box-shadow: #CDDC39 0px 19px 38px, #ef8967 0px 15px 12px;
   border-radius: 10%;
@@ -168,7 +174,11 @@
 
  }
 
- 
+ #express{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, #7E7E7E 0px 6px 6px;
+  border-radius: 10%;
+  padding-top: 10%;
+ }
 
 
  
