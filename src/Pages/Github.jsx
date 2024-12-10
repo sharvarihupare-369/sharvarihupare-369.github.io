@@ -79,7 +79,7 @@ export const Github = () => {
           <Image
             m="auto"
             id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=sharvarihupare-369&theme=sea&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D&background=#a084ca"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=sharvarihupare-369&theme=sea&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D&background=%23a084ca"
             alt="streak-stat"
           />
         </Box>
