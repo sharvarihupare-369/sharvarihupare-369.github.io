@@ -91,7 +91,7 @@ const Home = () => {
                   mt="40px"
                   id="resume-button-2"
                   background="#0ef"
-                  onClick={()=>openLink("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=sharing")}
+                  onClick={()=>openLink("https://drive.google.com/file/d/14lFjwNN_repyoY7dKykXA5_niY7mjf4d/view?usp=sharing")}
                   className="home-resume btn-box"
                 >
                   Download Resume

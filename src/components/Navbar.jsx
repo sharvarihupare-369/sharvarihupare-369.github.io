@@ -74,7 +74,7 @@ const Navbar = () => {
                                     </VStack>
                                     <HStack w={'full'} justifyContent={'space-evenly'} pos={'absolute'} bottom={'5'} left={'0'}>
                                         <Link fontWeight={'bold'} borderRadius={'5px'} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'}  className='nav-link resume' id='resume-button-1' href={resume} onClick={openResume} download={true} target='_blank'>
-                                        <Button onClick={()=>openResume("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=sharing")} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} _hover={'none'}>
+                                        <Button onClick={()=>openResume("https://drive.google.com/file/d/14lFjwNN_repyoY7dKykXA5_niY7mjf4d/view?usp=sharing")} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} _hover={'none'}>
                                                Resume
                                       </Button>
                                         </Link>
@@ -91,7 +91,7 @@ const Navbar = () => {
                        
                         <HashLink className='nav-link contact' id="navbar-home" smooth  to='/#contact'>Contact</HashLink>
                         <Link fontWeight={'bold'} borderRadius={'5px'} backgroundImage={'linear-gradient(to right, #0ef, cyan.50)'}  className='nav-link resume' id='resume-button-1' href={resume} download={true} target='_blank'>
-                            <Button onClick={()=>openResume("https://drive.google.com/file/d/1GbXolYZQXqui6TrjEGGCRUR-jEUkqVSg/view?usp=sharing")} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} _hover={'none'}>
+                            <Button onClick={()=>openResume("https://drive.google.com/file/d/14lFjwNN_repyoY7dKykXA5_niY7mjf4d/view?usp=sharing")} backgroundImage={'linear-gradient(to right, #0ef, cyan.500)'} _hover={'none'}>
                                 Resume
                             </Button>
                         </Link>
