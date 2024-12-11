@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.85c4883b.css",
-    "main.js": "/static/js/main.a9e805c7.js",
+    "main.js": "/static/js/main.920396fb.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Mypic.jpg": "/static/media/Mypic.8d8a588c74d5c44c5725.jpg",
     "static/media/Jwellery.png": "/static/media/Jwellery.bf3add1cc70e311aebe7.png",
     "static/media/beautiq.png": "/static/media/beautiq.70cd4f42aa291462a457.png",
-    "static/media/Sharvari-Hupare-Resume.pdf": "/static/media/Sharvari-Hupare-Resume.7475418e51053eefca98.pdf",
     "static/media/LandingUpperPartLightTheme.png": "/static/media/LandingUpperPartLightTheme.91b3d10b86783c3d5ed7.png",
     "static/media/bookDigitally.png": "/static/media/bookDigitally.ce00661632444a08eed2.png",
     "static/media/dashdonation.png": "/static/media/dashdonation.1388ecf62f12252e9b3e.png",
+    "static/media/Sharvari-Hupare-Resume.pdf": "/static/media/Sharvari-Hupare-Resume.2f4437d70b7bf05ece92.pdf",
     "static/media/landingPageTodo.png": "/static/media/landingPageTodo.11606b1158282180a5f7.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.85c4883b.css.map": "/static/css/main.85c4883b.css.map",
-    "main.a9e805c7.js.map": "/static/js/main.a9e805c7.js.map",
+    "main.920396fb.js.map": "/static/js/main.920396fb.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85c4883b.css",
-    "static/js/main.a9e805c7.js"
+    "static/js/main.920396fb.js"
   ]
 }
