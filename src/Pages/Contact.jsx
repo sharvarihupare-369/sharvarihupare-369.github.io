@@ -2,26 +2,17 @@ import {
   Box,
   Heading,
   Button,
-  Image,
-  Flex,
   Text,
   Input,
-  FormLabel,
   Textarea,
   Container,
-  Grid,
   useToast,
 } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
 import "./Contact.css";
 import AOS from "aos";
 import { Link } from "@chakra-ui/react";
-import { SiGooglemessages } from "react-icons/si";
-import { GrMail } from "react-icons/gr";
-import { FaMobileAlt } from "react-icons/fa";
-import { BiPhone } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FiPhoneCall } from "react-icons/fi";
 import emailjs from '@emailjs/browser';
 

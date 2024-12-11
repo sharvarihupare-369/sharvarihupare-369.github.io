@@ -13,7 +13,6 @@ import myimage from "../Assets/Mypic.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import resume from "../Assets/Resume/Sharvari-Hupare-Resume.pdf";
-import { FaGithub, FaHeart, FaLinkedin } from 'react-icons/fa';
 import "./home.css";
 
 const Home = () => {
