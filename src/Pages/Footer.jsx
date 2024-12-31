@@ -39,10 +39,18 @@ const Footer = () => {
         </span>
       </Box>
       <Flex alignItems={"center"}>
-        <Link id="contact-github" to="https://github.com/sharvarihupare-369">
+        <Link
+          target="_blank"
+          id="contact-github"
+          to="https://github.com/sharvarihupare-369"
+        >
           <FaGithub fontSize={"35px"} />
         </Link>
-        <Link id="contact-linkedin" to="https://www.linkedin.com/in/sharvari-hupare15/">
+        <Link
+          target="_blank"
+          id="contact-linkedin"
+          to="https://www.linkedin.com/in/sharvari-hupare15/"
+        >
           <FaLinkedin
             style={{ marginLeft: "20px" }}
             color="#0e76a8"
