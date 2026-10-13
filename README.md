@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sharvari Hupare — 3D Scroll-Driven Portfolio Website
 
-## Getting Started
+An award-level, scroll-driven 3D portfolio website for **Sharvari Hupare**, Software Development Engineer & Full-Stack AI Engineer. Built with Next.js App Router, React Three Fiber, Drei, Lenis smooth scrolling, and Tailwind CSS.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo & Quick Links
+- **Local Dev Server**: `http://localhost:3000`
+- **ClinicPilot (Featured Live Project)**: [https://clinicpilot-frontend.vercel.app/](https://clinicpilot-frontend.vercel.app/)
+- **GitHub**: [github.com/sharvarihupare-369](https://github.com/sharvarihupare-369)
+- **LinkedIn**: [linkedin.com/in/sharvarihupare](https://www.linkedin.com/in/sharvarihupare)
+
+---
+
+## 🛠️ Tech Stack
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, Turbopack) + TypeScript
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) + Glassmorphism Design System
+- **3D Graphics**: [Three.js](https://threejs.org/), [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber), [@react-three/drei](https://github.com/pmndrs/drei)
+- **Smooth Scrolling**: [Lenis](https://lenis.darkroom.engineering/)
+- **Micro-Interactions**: [canvas-confetti](https://www.npmjs.com/package/canvas-confetti)
+- **Icons**: [Lucide React](https://lucide.dev/) + Custom SVG Brand Icons
+- **Deployment**: [Vercel](https://vercel.com/)
+
+---
+
+## 📁 Project Architecture
+
+```
+portfolio/
+├── public/
+│   ├── sharvari.jpg              # Profile photograph
+│   └── favicon.ico
+├── src/
+│   ├── app/
+│   │   ├── globals.css           # Cosmic dark theme tokens, glassmorphism utilities
+│   │   ├── layout.tsx            # Space Grotesk + Inter fonts, SEO metadata
+│   │   └── page.tsx              # Single-page journey assembly
+│   ├── components/
+│   │   ├── 3d/
+│   │   │   ├── Scene.tsx         # Lazy-loaded WebGL canvas wrapper with fallback
+│   │   │   ├── CameraRig.tsx     # Smooth scroll waypoint interpolation & cursor parallax
+│   │   │   ├── MorphingCore.tsx  # Refractive glass polyhedron with chromatic core
+│   │   │   ├── StarField.tsx     # 1,100+ instanced drifting cosmic particles
+│   │   │   └── Lighting.tsx      # Multi-point cyan and violet cinematic lighting
+│   │   ├── providers/
+│   │   │   └── SmoothScrollProvider.tsx # Lenis smooth scroll bridge
+│   │   └── ui/
+│   │       ├── Navbar.tsx        # Sticky glass navigation with avatar thumbnail
+│   │       ├── Preloader.tsx     # Cybernetic loading screen with progress percentage
+│   │       ├── HeroSection.tsx   # Glowing portrait, headline, CTAs, metrics
+│   │       ├── AboutSection.tsx  # Bento grid: pharmacy-to-tech journey & education
+│   │       ├── ExperienceSection.tsx # ImpactGuru & Metta Social timeline cards
+│   │       ├── ProjectsSection.tsx   # ClinicPilot, KnowledgeFlow AI, AI Code Converter
+│   │       ├── SkillsSection.tsx # Searchable tech matrix & category filters
+│   │       ├── ContactSection.tsx# Direct reach-out form & one-click copy toast
+│   │       └── Footer.tsx        # Back-to-top button and social links
+│   ├── data/
+│   │   └── portfolioData.ts      # ⚡ SINGLE SOURCE OF TRUTH FOR ALL RESUME CONTENT
+│   ├── hooks/
+│   │   └── useScrollJourney.ts   # Synchronizes scroll progress with 3D camera
+│   └── types/
+│       └── portfolio.ts          # Strictly typed TypeScript data models
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✏️ How to Edit Content & Resume Details
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All textual content across every section of the website is driven from a single typed file:
+👉 **`src/data/portfolioData.ts`**
 
-## Learn More
+You do not need to hunt through components to change your information:
+1. **Personal Details**: Modify `personal.name`, `personal.tagline`, `personal.location`, `personal.email`, `personal.phone`, etc.
+2. **Profile Photo**: Replace `public/sharvari.jpg` or update `avatarUrl` in `portfolioData.ts`.
+3. **Experience**: Add or edit roles under the `experiences` array in `portfolioData.ts`.
+4. **Projects**: Add live demos, github links, or project highlights in `projects`.
+5. **Skills**: Add or organize technical skills under `skillCategories`.
+6. **Education**: Update institutions or courses in `education`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💻 Running Locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Install dependencies (already installed)
+npm install
 
-## Deploy on Vercel
+# Run the development server
+npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Open http://localhost:3000 in your browser
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🚀 Deploying to Vercel
+
+1. Push your repository to GitHub:
+   ```bash
+   git add .
+   git commit -m "feat: complete 3D scroll-driven portfolio"
+   git remote add origin https://github.com/sharvarihupare-369/portfolio.git
+   git push -u origin main
+   ```
+2. Log in to [Vercel](https://vercel.com/) and click **"Add New Project"**.
+3. Import your `portfolio` repository.
+4. Next.js App Router defaults will be automatically detected. Click **Deploy**!

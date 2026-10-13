@@ -1,26 +1,134 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #140a06;
+  --foreground: #fdfbf7;
+  --espresso-dark: #0f0704;
+  --espresso-base: #140a06;
+  --espresso-card: #20110b;
+  --terracotta: #d85827;
+  --terracotta-bright: #e76735;
+  --amber-gold: #c67d1f;
+  --amber-warm: #f5ab79;
+  --card-bg: rgba(32, 17, 11, 0.72);
+  --card-border: rgba(255, 255, 255, 0.08);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  background-color: #140a06;
+  color: #fdfbf7;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #140a06;
+  color: #fdfbf7;
+  min-height: 100vh;
+  overflow-x: hidden;
+  selection-background-color: #d85827;
+  selection-color: #ffffff;
+}
+
+/* Glassmorphism Panels - Warm Dark Espresso Aesthetic */
+.glass-panel {
+  background: rgba(32, 17, 11, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 36px 0 rgba(0, 0, 0, 0.55);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(42, 22, 14, 0.85);
+  border-color: rgba(216, 88, 39, 0.45);
+  box-shadow: 0 14px 44px -10px rgba(216, 88, 39, 0.3);
+  transform: translateY(-2px);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Warm Image 1 Capsule Badges */
+.pill-amber {
+  background-color: #c67d1f;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pill-espresso {
+  background-color: #24130c;
+  color: #fdfbf7;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pill-terracotta {
+  background-color: #d85827;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradients in Terracotta, Ochre Amber, Warm Cream */
+.text-gradient-terracotta {
+  background: linear-gradient(135deg, #fdfbf7 0%, #f0834c 50%, #d85827 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-amber {
+  background: linear-gradient(135deg, #fdfbf7 0%, #eab366 50%, #c67d1f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cinematic {
+  background: linear-gradient(135deg, #ffffff 0%, #f5ab79 35%, #e76735 65%, #c67d1f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glow effects */
+.glow-terracotta {
+  box-shadow: 0 0 32px -4px rgba(216, 88, 39, 0.55);
+}
+
+.glow-amber {
+  box-shadow: 0 0 32px -4px rgba(198, 125, 31, 0.55);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #140a06;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(216, 88, 39, 0.6);
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
